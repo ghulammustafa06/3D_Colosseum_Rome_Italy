@@ -52,3 +52,64 @@ header h1 {
     opacity: 1; 
     transform: scale(1.05); 
 }
+
+.info-tabs {
+    margin: 20px 0;
+}
+
+.info-tabs h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: #333333b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tab-button:hover {
+    background: #555;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    animation: fadeInAnimation 0.5s ease-out forwards, slideIn 0.5s ease-out forwards; 
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+}
+
+.tab-content h3 {
+   color: #333333b2;
+}
+
+
+.tab-content p {
+    color: #34495e; 
+    line-height: 1.6; 
+    font-family: "Handlee", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
