@@ -12,7 +12,7 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-document.getElementById("like-button").addEventListener("click", function() {
+document.getElementById("like-button").addEventListener("click", function () {
     var likeCountElem = document.getElementById("like-count");
     var currentCount = parseInt(likeCountElem.textContent);
     likeCountElem.textContent = (currentCount + 1) + " likes";

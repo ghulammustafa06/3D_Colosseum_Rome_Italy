@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Handlee&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -45,12 +46,12 @@ header h1 {
     width: 30%;
     margin-bottom: 20px;
     border-radius: 10px;
-    transition: opacity 0.5s ease, transform 0.5s ease; 
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .gallery-grid img:hover {
-    opacity: 1; 
-    transform: scale(1.05); 
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .info-tabs {
@@ -88,28 +89,70 @@ header h1 {
     padding: 20px;
     background: #fff;
     border-radius: 10px;
-    animation: fadeInAnimation 0.5s ease-out forwards, slideIn 0.5s ease-out forwards; 
+    animation: fadeInAnimation 0.5s ease-out forwards, slideIn 0.5s ease-out forwards;
 }
 
 @keyframes fadeInAnimation {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideIn {
-    from { transform: translateY(-20px); }
-    to { transform: translateY(0); }
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .tab-content h3 {
-   color: #333333b2;
+    color: #333333b2;
 }
 
 
 .tab-content p {
-    color: #34495e; 
-    line-height: 1.6; 
+    color: #34495e;
+    line-height: 1.6;
     font-family: "Handlee", cursive;
     font-weight: 500;
     font-style: normal;
+}
+
+
+.likes {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#like-button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#like-button:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
