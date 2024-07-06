@@ -59,3 +59,47 @@ window.addEventListener("resize", function () {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
+// Interaction: Rotate model on click (example)
+document.addEventListener("click", function () {
+    if (scene.children.length > 0) {
+      const object = scene.children[0];
+      object.rotation.y += Math.PI / 4;
+    }
+  });
+  
+  // Add Interactive Elements (example: clickable object)
+  const raycaster = new THREE.Raycaster();
+  const mouse = new THREE.Vector2();
+  
+  document.addEventListener('mousedown', onDocumentMouseDown, false);
+  
+  function onDocumentMouseDown(event) {
+    event.preventDefault();
+  
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+  
+    raycaster.setFromCamera(mouse, camera);
+  
+    const intersects = raycaster.intersectObjects(scene.children, true);
+  
+    if (intersects.length > 0) {
+      const object = intersects[0].object;
+      // Example: Add interactive behavior, like changing color or scaling
+      object.scale.set(1.2, 1.2, 1.2);
+    }
+  }
+  
+  // Add Background Music 
+  const listener = new THREE.AudioListener();
+  camera.add(listener);
+  
+  const sound = new THREE.Audio(listener);
+  const audioLoader = new THREE.AudioLoader();
+  audioLoader.load('bg_music.mp3', function (buffer) {
+    sound.setBuffer(buffer);
+    sound.setLoop(true);
+    sound.setVolume(0.5);
+    sound.play();
+  });
