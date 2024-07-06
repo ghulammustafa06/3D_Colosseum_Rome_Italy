@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Handlee&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 2.5em;
+    font-family: "Dancing Script", cursive;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallery {
+    margin: 20px 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-grid img {
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.gallery-grid img:hover {
+    opacity: 1; 
+    transform: scale(1.05); 
+}
