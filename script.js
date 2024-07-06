@@ -60,7 +60,7 @@ window.addEventListener("resize", function () {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-// Interaction: Rotate model on click (example)
+// Interaction: Rotate model on click 
 document.addEventListener("click", function () {
     if (scene.children.length > 0) {
       const object = scene.children[0];
@@ -68,7 +68,6 @@ document.addEventListener("click", function () {
     }
   });
   
-  // Add Interactive Elements (example: clickable object)
   const raycaster = new THREE.Raycaster();
   const mouse = new THREE.Vector2();
   
@@ -86,7 +85,6 @@ document.addEventListener("click", function () {
   
     if (intersects.length > 0) {
       const object = intersects[0].object;
-      // Example: Add interactive behavior, like changing color or scaling
       object.scale.set(1.2, 1.2, 1.2);
     }
   }
