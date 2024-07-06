@@ -37,3 +37,44 @@ main {
   min-height: 70vh; 
   flex-direction: column; 
 }
+
+
+.more-info {
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+    margin-top: 40px; 
+  }
+  
+  .more-info a {
+    display: inline-flex; 
+    color: #33333350;
+    font-size: 1rem;
+    align-items: center; 
+    position: relative;
+    justify-content: center; 
+    text-decoration: none;
+  }
+  
+  .more-info a:hover {
+    color: #007bff;
+    cursor: pointer; 
+    z-index: 1000; 
+  
+  }
+  
+  .more-info a i {
+    margin-right: 5px;
+  }
+  
+  
+  #container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    margin-top: 100px;
+    top: 0;
+    left: 0;
+  }
+  
