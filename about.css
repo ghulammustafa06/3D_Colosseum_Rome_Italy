@@ -156,3 +156,143 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .gallery h2 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        margin-top: 0;
+      
+    }
+
+    
+    .gallery-grid img {
+        width: 100%;
+    }
+
+    .tab-button {
+        padding: 5px;
+        margin: 4px;
+        font-size: 0.8em;
+    }
+    .tab-content p {
+        color: #34495e;
+        line-height: 1.2;
+        font-family: "Handlee", cursive;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .info-tabs h2 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 23px;
+    }
+
+    .tab-content h3 {
+        color: #333333b2;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .tab-content {
+        padding: 10px;
+    }
+
+    .likes h2 {
+        font-size: 18px;
+    }
+
+    #like-button {
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 5px 17px;
+        cursor: pointer;
+        margin-bottom: 0px;
+        border-radius: 4px;
+    }
+
+    .likes p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    .gallery h2 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        margin-top: 0;
+      
+    }
+
+    
+    .gallery-grid img {
+        width: 100%;
+    }
+
+    .tab-button {
+        padding: 5px;
+        margin: 4px;
+        font-size: 0.4em;
+    }
+    .tab-content p {
+        color: #34495e;
+        line-height: 1.1;
+        font-family: "Handlee", cursive;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .info-tabs h2 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+    }
+
+    .tab-content h3 {
+        color: #333333b2;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .tab-content {
+        padding: 10px;
+    }
+
+    .likes h2 {
+        font-size: 13px;
+    }
+
+    #like-button {
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 3px 13px;
+        cursor: pointer;
+        margin-bottom: 0px;
+        border-radius: 4px;
+    }
+
+    .likes p {
+        font-size: 10px;
+    }
+}
+
