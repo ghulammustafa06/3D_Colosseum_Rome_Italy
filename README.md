@@ -1,8 +1,15 @@
+[![Try Out](https://github.com/ghulammustafa06/hotel_reservation_websites/blob/main/Assets/Images/repo-img.png)](https://threedweb.z23.web.core.windows.net/)
+
+
 # Colosseum Rome Italy 👑, 3D Experience
 
-## Project Description
-
 This project is a 3D web experience dedicated to the Colosseum in Rome, Italy. It features a main page with an interactive 3D model of the Colosseum and an informative second page with a gallery and detailed information about the Colosseum's history, architecture, events, and visiting details.
+
+![image](https://github.com/user-attachments/assets/3c0a84ce-8de6-4dd4-83a4-6fbb0a4cfda3)
+
+
+![image](https://github.com/user-attachments/assets/91f8b782-f39c-45bc-a923-2f6a1392feee)
+
 
 ## Features
 
@@ -30,31 +37,6 @@ This project is a 3D web experience dedicated to the Colosseum in Rome, Italy. I
     ```bash
     git clone https://github.com/ghulammustafa06/3D_Colosseum_Rome_Italy
     ```
-
-2. **Navigate to the Project Directory**:
-    ```bash
-    cd 3D_Colosseum_Rome_Italy
-    ```
-
-3. **Open `index.html` in Your Browser**:
-    - Simply open the `index.html` file in your preferred web browser to view the main page.
-    - Click on the "More Info" link to navigate to the detailed information page.
-
-## File Structure
-
-```plaintext
-colosseum-rome/
-├── index.html          # Main page with 3D model
-├── about.html          # More Info page
-├── style.css           # Styles for the main page
-├── about.css           # Styles for the More Info page
-├── script.js           # Script for the main page
-├── about.js            # Script for the More Info page
-├── models/             # Directory for 3D models
-│   └── colosseum_rome_italy/
-│       └── scene.gltf  # 3D model file
-├── bg_music.mp3        # Background music file
-```
 
 ## Dependencies
 
